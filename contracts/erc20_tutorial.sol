@@ -1,11 +1,11 @@
 pragma solidity ^0.4.18;
 
 // ----------------------------------------------------------------------------
-// BTCE token contract
+// btce.io token contract
 //
 // Deployed to : 0xF68eA2F13d13Bff44C2cD19D6cB6CB26348c4561
 // Symbol      : BTCE
-// Name        : BTCE Token
+// Name        : btce.io token
 // Total supply: 1000000
 // Decimals    : 18
 //
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract BTCEToken is ERC20Interface, Owned, SafeMath {
+contract BTCEIOToken is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -114,7 +114,7 @@ contract BTCEToken is ERC20Interface, Owned, SafeMath {
     // ------------------------------------------------------------------------
     constructor() public {
         symbol = "BTCE";
-        name = "BTCE Token";
+        name = "btce.io token";
         decimals = 18;
         _totalSupply = 1000000000000000000000000;
         balances[0xF68eA2F13d13Bff44C2cD19D6cB6CB26348c4561] = _totalSupply;
