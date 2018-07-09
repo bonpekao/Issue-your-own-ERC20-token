@@ -6,7 +6,7 @@ pragma solidity ^0.4.18;
 // Deployed to : 0xF68eA2F13d13Bff44C2cD19D6cB6CB26348c4561
 // Symbol      : BTCE
 // Name        : btce.io token
-// Total supply: 1000000
+// Total supply: 10000000
 // Decimals    : 18
 //
 // Enjoy.
@@ -116,7 +116,7 @@ contract BTCEIOToken is ERC20Interface, Owned, SafeMath {
         symbol = "BTCE";
         name = "btce.io token";
         decimals = 18;
-        _totalSupply = 1000000000000000000000000;
+        _totalSupply = 10000000000000000000000000;
         balances[0xF68eA2F13d13Bff44C2cD19D6cB6CB26348c4561] = _totalSupply;
         emit Transfer(address(0), 0xF68eA2F13d13Bff44C2cD19D6cB6CB26348c4561, _totalSupply);
     }
